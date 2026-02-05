@@ -1,6 +1,6 @@
-# Monitor de Máquinas Industriais - Faetec Mecânica RJ
+# Monitor de Máquinas Industriais - Mecânica RJ
 
-**Projeto desenvolvido no 3º ano Técnico Mecânica Industrial Faetec RJ**
+**Projeto desenvolvido no 3º ano Técnico Mecânica Industrial RJ**
 
 ## Funcionalidades
 - Monitoramento tempo real: temperatura, vibração, pressão
