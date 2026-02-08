@@ -1,5 +1,4 @@
-# Monitor de Máquinas Industriais - Faetec RJ 2026
-# Aluno: [SEU NOME] | 3º ano Mecânica Industrial
+# Monitor de Máquinas Industriais - RJ 2026
 
 import time
 import random
@@ -13,7 +12,7 @@ class MonitorMecanica:
         self.status = "NORMAL"
         
     def ler_sensores(self):
-        # Simula sensores reais da Faetec
+        # Simula sensores reais
         self.temperatura = random.uniform(40, 85)
         self.vibracao = random.uniform(1, 7)
         self.pressao = random.uniform(2, 9)
@@ -48,7 +47,7 @@ class MonitorMecanica:
 # === EXECUÇÃO PRINCIPAL ===
 monitor = MonitorMecanica()
 
-print("🔧 MONITOR INDUSTRIAL FAETEC - INICIADO")
+print("🔧 MONITOR INDUSTRIAL - INICIADO")
 print("Pressione Ctrl+C para parar
 ")
 
