@@ -46,7 +46,7 @@ class MonitorMecanica:
 # === EXECUÇÃO PRINCIPAL ===
 monitor = MonitorMecanica()
 
-print("🔧 MONITOR INDUSTRIAL - INICIADO")
+print("MONITOR INDUSTRIAL - INICIADO")
 print("Pressione Ctrl+C para parar")
 
 try:
