@@ -21,13 +21,13 @@ class MonitorMecanica:
         alertas = []
         
         if self.temperatura > 70:
-            alertas.append("🚨 SUPERAQUECIMENTO")
+            alertas.append("SUPERAQUECIMENTO")
             self.status = "CRÍTICO"
         elif self.vibracao > 5:
-            alertas.append("⚠️ VIBRAÇÃO ALTA")
+            alertas.append("VIBRAÇÃO ALTA")
             self.status = "ATENÇÃO"
         elif self.pressao < 3:
-            alertas.append("⚠️ PRESSÃO BAIXA")
+            alertas.append("PRESSÃO BAIXA")
             self.status = "ATENÇÃO"
         else:
             self.status = "NORMAL"
@@ -36,8 +36,7 @@ class MonitorMecanica:
     
     def gerar_relatorio(self):
         timestamp = datetime.now().strftime("%d/%m/%Y %H:%M")
-        print(f"
-📊 RELATÓRIO - {timestamp}")
+        print(f"RELATÓRIO - {timestamp}")
         print(f"Temperatura: {self.temperatura:.1f}°C")
         print(f"Vibração: {self.vibracao:.1f} mm/s") 
         print(f"Pressão: {self.pressao:.1f} bar")
@@ -48,13 +47,12 @@ class MonitorMecanica:
 monitor = MonitorMecanica()
 
 print("🔧 MONITOR INDUSTRIAL - INICIADO")
-print("Pressione Ctrl+C para parar
-")
+print("Pressione Ctrl+C para parar")
 
 try:
     while True:
         monitor.ler_sensores()
-        alertas = monitor.analizar_falhas()
+        alertas = monitor.analisar_falhas()
         
         monitor.gerar_relatorio()
         
@@ -65,5 +63,5 @@ try:
         time.sleep(3)  # Lê a cada 3 segundos (tempo real industrial)
         
 except KeyboardInterrupt:
-    print("
-✅ Monitor finalizado com sucesso!")
+    print("\n")
+print("monitor finalizado com sucesso!")
